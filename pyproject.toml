@@ -1,0 +1,15 @@
+[project]
+name = "mark-mcp"
+version = "0.1.0"
+description = "🧑‍💻 스푼랩스 비글루 사업부 서버팀의 전설, 맑흐 MCP 서버"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.0.0",
+]
+
+[project.scripts]
+mark-mcp = "mark_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
